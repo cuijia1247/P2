@@ -124,9 +124,16 @@ Released after our paper published.
 ## Citation
 Waiting for the paper acceptance.
 
+## Contributors
+We would like to acknowledge the contributions of the following individuals to the P2 dataset:
+
+- **Miss Huang Rui**
+- **Jiang Che**
+- **Hu Chengran**
+- **Cui Jia**
+
 ## Contact Information
 For questions, feel free to contact: 📧 202421055240@mail.scut.edu.cn or 📧 cuijia1247@scut.edu.cn
-
 
 
 ### v2.0.0 (2025-07-20)
