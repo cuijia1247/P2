@@ -16,6 +16,10 @@
 1. **自动筛选**：使用我们论文中提出的风格不确定性测量（SUM）来选择风格不确定性较低的图像——即风格上净化的图像。
 2. **人工验证**：对于选定的绘画，我们聘请设计专业人员进行人工验证和质量评估。
 
+* 您可以通过百度云链接下载数据集：
+链接：https://pan.baidu.com/s/1yl22LCQIUDXiFqyqjW4r0g?pwd=642s 
+提取码：等待论文发表
+
 ## 相关工作
 * [Painting-91数据集]
 Khan, Fahad Shahbaz, et al. "Painting-91: a large scale database for computational painting categorization." Machine vision and applications 25.6 (2014): 1385-1397.
@@ -121,6 +125,14 @@ P2数据集包含总共**25,710张绘画图像**，涵盖6种不同的艺术风�
 
 ## 引用
 等待论文接受。
+
+## 贡献者
+我们要感谢以下个人对P2数据集的贡献：
+
+- **黄蕊女士**
+- **蒋澈女士**
+- **胡成冉女士**
+- **崔嘉博士**
 
 ## 联系方式
 如有问题，请联系：📧 202421055240@mail.scut.edu.cn 或 📧 cuijia1247@scut.edu.cn
