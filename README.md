@@ -18,7 +18,7 @@ All painting images were selected from existing public painting datasets (Painti
 2. 【Manual verification】: For the selected paintings, we engaged design professionals to conduct manual verification and quality assessment.
    
 * You can download the dataset through Baidu Yun link:
-Link: https://pan.baidu.com/s/1yl22LCQIUDXiFqyqjW4r0g?pwd=642s 
+Link: https://pan.baidu.com/s/1yl22LCQIUDXiFqyqjW4r0g 
 Password: waiting for paper publish 
 
 ## Related Work
