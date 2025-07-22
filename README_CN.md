@@ -17,7 +17,7 @@
 2. **人工验证**：对于选定的绘画，我们聘请设计专业人员进行人工验证和质量评估。
 
 * 您可以通过百度云链接下载数据集：
-链接：https://pan.baidu.com/s/1yl22LCQIUDXiFqyqjW4r0g?pwd=642s 
+链接：https://pan.baidu.com/s/1yl22LCQIUDXiFqyqjW4r0g
 提取码：等待论文发表
 
 ## 相关工作
