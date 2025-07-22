@@ -121,7 +121,7 @@ P2数据集包含总共**25,710张绘画图像**，涵盖6种不同的艺术风�
 论文发表后发布。
 
 ## 数据质量
-![数据集质量评估](DemoImages/Dataset-Quality.jpg)
+![数据集质量评估](DemoImages/Dataset-Quality.png)
 
 ## 引用
 等待论文接受。
