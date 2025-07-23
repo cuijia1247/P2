@@ -4,29 +4,28 @@
 本仓库提供了P2数据集，这是一个经过精心策划和净化的绘画数据集，专门用于艺术图像分析中的风格分类研究。
 
 ## 数据集信息
-- **数据集名称**: [净化绘画风格分类数据集]
-- **版本**: [2.0]
-- **创建日期**: [2025-7-20]
-- **最后更新**: [2025-7-20]
-- **数据集大小**: [1.8G]
-- **数据格式**: [jpg/png]
+- **数据集名称**: 净化绘画风格分类数据集
+- **版本**: 2.0
+- **创建日期**: 2025-07-20
+- **最后更新**: 2025-07-20
+- **数据集大小**: 1.8GB
+- **数据格式**: JPG
 
 ## 数据来源
-所有绘画图像均选自现有的公开绘画数据集（Painting91、Pandora和WikiArt）。目标是保留具有清晰一致风格特征的图像，这显著提高了下游分类性能。因此，所有具有特定风格的绘画图像都通过两步流程进行筛选：
-1. **自动筛选**：使用我们论文中提出的风格不确定性测量（SUM）来选择风格不确定性较低的图像——即风格上净化的图像。
-2. **人工验证**：对于选定的绘画，我们聘请设计专业人员进行人工验证和质量评估。
+所有绘画图像均选自现有的公开绘画数据集（Painting-91、Pandora和WikiArt）。目标是保留具有清晰一致风格特征的图像，这显著提高了下游分类性能。因此，所有具有特定风格的绘画图像都通过两步流程进行筛选：
 
-* 您可以通过百度云链接下载数据集：
-链接：https://pan.baidu.com/s/1yl22LCQIUDXiFqyqjW4r0g
-提取码：等待论文发表
+1. **自动筛选**: 使用我们论文中提出的风格不确定性测量（SUM）来选择风格不确定性较低的图像——即风格上净化的图像。
+2. **人工验证**: 对于选定的绘画，我们聘请设计专业人员进行人工验证和质量评估。
+
+**数据集下载:**
+- 平台: 百度云
+- 链接: https://pan.baidu.com/s/1yl22LCQIUDXiFqyqjW4r0g
+- 提取码: 论文发表后提供
 
 ## 相关工作
-* [Painting-91数据集]
-Khan, Fahad Shahbaz, et al. "Painting-91: a large scale database for computational painting categorization." Machine vision and applications 25.6 (2014): 1385-1397.
-* [Pandora风格数据集]
-Florea, Corneliu, et al. "Pandora: Description of a painting database for art movement recognition with baselines and perspectives." 2016 24th European Signal Processing Conference (EUSIPCO). IEEE, 2016.
-* [WikiArt数据集]
-Saleh, Babak, and Ahmed Elgammal. "Large-scale classification of fine-art paintings: Learning the right metric on the right feature." arXiv preprint arXiv:1505.00855 (2015).
+- **Painting-91数据集**: Khan, Fahad Shahbaz, et al. "Painting-91: a large scale database for computational painting categorization." *Machine Vision and Applications* 25.6 (2014): 1385-1397.
+- **Pandora风格数据集**: Florea, Corneliu, et al. "Pandora: Description of a painting database for art movement recognition with baselines and perspectives." *2016 24th European Signal Processing Conference (EUSIPCO)*. IEEE, 2016.
+- **WikiArt数据集**: Saleh, Babak, and Ahmed Elgammal. "Large-scale classification of fine-art paintings: Learning the right metric on the right feature." *arXiv preprint arXiv:1505.00855* (2015).
 
 ## 数据集结构
 P2数据集采用层次化结构组织，图像、标签和元数据文件清晰分离。
@@ -60,7 +59,7 @@ P2_dataset/
 │       ├── Su0002.jpg
 │       └── ...
 ├── labels/                          # 数据集标签和注释
-│   └── label.csv                    # 所有图像的一热编码标签
+│   └── label.csv                    # 所有图像的独热编码标签
 └── filenameMap/                     # 原始到新文件名的映射
     ├── Abstract-expressionism_filenameMap.txt
     ├── Baroque_filenameMap.txt
@@ -72,12 +71,12 @@ P2_dataset/
 
 ### 文件说明
 - **图像文件**: 所有绘画图像以JPG格式存储，按艺术风格在独立目录中组织
-- **label.csv**: 包含所有25,710张图像的一热编码标签，列包括文件名、风格和6种艺术风格的二进制指标
+- **label.csv**: 包含所有25,710张图像的独热编码标签，列包括文件名、风格和6种艺术风格的二进制指标
 - **文件名映射文件**: 包含原始文件名与标准化命名约定（如Ab0001.jpg、Ba0001.jpg等）之间映射的文本文件
 
 ## 数据字段说明
 
-P2数据集包含绘画图像及其对应的CSV格式标签。每张图像都与表示其艺术风格的一热编码标签相关联。
+P2数据集包含绘画图像及其对应的CSV格式标签。每张图像都与表示其艺术风格的独热编码标签相关联。
 
 ### 艺术风格与特征
 | 艺术风格 | 示例图像 |
@@ -114,17 +113,51 @@ P2数据集包含总共**25,710张绘画图像**，涵盖6种不同的艺术风�
 ### 数据特征
 - **平衡表示**: 数据集为每种艺术风格提供了充足的样本，印象派占比最高（24.4%），巴洛克占比最低（4.1%）
 - **高质量**: 所有图像都通过自动风格不确定性测量（SUM）和设计专业人员的人工验证进行筛选
-- **一致格式**: 所有图像都标准化为JPG格式，具有一致的命名约定
+- **格式一致**: 所有图像都标准化为JPG格式，具有一致的命名约定
 - **净化选择**: 图像经过精心选择，确保风格特征清晰一致
 
 ## 使用说明
-论文发表后发布。
+
+### 基本使用
+1. **下载**: 从提供的百度云链接获取数据集
+2. **解压**: 将数据集解压到您的首选目录
+3. **加载标签**: 导入 `label.csv` 文件以进行训练/测试拆分
+4. **访问图像**: 导航至 `images/` 下的相应风格目录
+
+### 推荐实践
+- 如需要，使用文件名映射文件追溯到原始数据集来源
+- 设计训练策略时考虑类别不平衡问题
+- 利用独热编码标签进行多类分类任务
+
+### 代码示例
+```python
+import pandas as pd
+from PIL import Image
+import os
+
+# 加载标签
+labels_df = pd.read_csv('P2_dataset/labels/label.csv')
+
+# 加载图像
+img_path = 'P2_dataset/images/Impressionism/Im0001.jpg'
+image = Image.open(img_path)
+```
+
+**注意**: 完整的使用文档和代码示例将在论文发表后发布。
 
 ## 数据质量
 ![数据集质量评估](DemoImages/Dataset-Quality.png)
 
 ## 引用
-等待论文接受。
+```bibtex
+@dataset{p2_dataset_2024,
+  title={P2: A Purified Painting Style Classification Dataset},
+  author={[作者将在发表后添加]},
+  year={2024},
+  version={2.0},
+  note={数据集将在论文接受后提供}
+}
+```
 
 ## 贡献者
 我们要感谢以下个人对P2数据集的贡献：
@@ -135,9 +168,17 @@ P2数据集包含总共**25,710张绘画图像**，涵盖6种不同的艺术风�
 - **崔嘉博士**
 
 ## 联系方式
-如有问题，请联系：📧 202421055240@mail.scut.edu.cn 或 📧 cuijia1247@scut.edu.cn
+如有问题，请联系：
+- 📧 202421055240@mail.scut.edu.cn
+- 📧 cuijia1247@scut.edu.cn
 
-## 更新日志
+## 许可证
+[将在论文发表后指定]
+
+## 版本历史
 
 ### v2.0.0 (2025-07-20)
-- 初始版本发布 
+- 初始版本发布
+- 25,710张图像，涵盖6种艺术风格
+- 实施两步筛选流程（SUM + 人工验证）
+- 标准化命名约定和文件组织 
