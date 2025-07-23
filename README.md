@@ -19,7 +19,7 @@ All painting images were selected from existing public painting datasets (Painti
    
 **Dataset Download:**
 - Platform: Baidu Yun
-- Link: https://pan.baidu.com/s/1yl22LCQIUDXiFqyqjW4r0g?pwd=642s 
+- Link: https://pan.baidu.com/s/1yl22LCQIUDXiFqyqjW4r0g
 - Password: Available upon paper publication
 
 ## Related Work
